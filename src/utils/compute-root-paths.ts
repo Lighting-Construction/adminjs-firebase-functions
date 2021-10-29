@@ -19,6 +19,7 @@ export type AdminPathOptions = Pick<AdminJSOptionsWithDefault, 'loginPath' | 'lo
 
 export const getLocalhostPathForEnv = (env: ComputeRootPathEnv): string => (
   `${env.project}/${env.region}/${env.target}`
+  return env.target;
 );
 
 const joinPaths = (...paths: Array<string>): string => {
@@ -44,11 +45,12 @@ export const computeRootPaths = (
 ): ComputedPaths => {
   let firebaseRootPath: string;
 
-  if (env.emulator) {
-    firebaseRootPath = getLocalhostPathForEnv(env);
-  } else {
+//// This should no longer be needed with the latest firebase-tools
+//   if (env.emulator) {
+//     firebaseRootPath = getLocalhostPathForEnv(env);
+//   } else {
     firebaseRootPath = customFunctionPath || env.target;
-  }
+//   }
 
   const { rootPath, loginPath, logoutPath } = options;
 
