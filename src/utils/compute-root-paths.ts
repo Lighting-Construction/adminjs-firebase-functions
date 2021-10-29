@@ -18,7 +18,7 @@ export type ComputedPaths = {
 export type AdminPathOptions = Pick<AdminJSOptionsWithDefault, 'loginPath' | 'logoutPath' | 'rootPath'>
 
 export const getLocalhostPathForEnv = (env: ComputeRootPathEnv): string => (
-  env.target  //`${env.project}/${env.region}/${env.target}`;
+  env.target // `${env.project}/${env.region}/${env.target}`;
 );
 
 const joinPaths = (...paths: Array<string>): string => {
