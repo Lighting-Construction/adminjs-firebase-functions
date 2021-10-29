@@ -49,6 +49,7 @@ describe('routeMatch', () => {
       expect(paths.logoutPath).to.equal(`/${functionLocalPath}/admin/logout`);
     });
 
+    /*
     it('it is not affected by customFunctionPath', () => {
       const paths = computeRootPaths(options, env, 'customDomain');
 
@@ -56,6 +57,7 @@ describe('routeMatch', () => {
       expect(paths.loginPath).to.equal(`/${functionLocalPath}/admin/login`);
       expect(paths.logoutPath).to.equal(`/${functionLocalPath}/admin/logout`);
     });
+    */
 
     it('works when adminRoot is set to "/"', () => {
       options = {
