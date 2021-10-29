@@ -1,10 +1,10 @@
 {
-  "name": "@adminjs/firebase-functions",
+  "name": "@run-construction/adminjs-firebase-functions",
   "version": "4.0.0",
   "description": "Firebase plugin for AdminJS",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "git@github.com:SoftwareBrothers/adminjs-firebase-functions.git",
+  "repository": "git@github.com:Lighting-Construction/adminjs-firebase-functions.git",
   "author": "Wojciech Krysiak <wojciech.g.krysiak@gmail.com>",
   "license": "MIT",
   "scripts": {
